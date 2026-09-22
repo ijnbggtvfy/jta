@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="./Site/images/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Zaluea | Home</title>
+</head>
+<body>
+    <div class="bar">
+        <div class="main_title"><a href="/">J.T</a></div>
+        <div class="button games"><a href="games.html">Games</a></div>
+        <div class="button ytlink" onclick="quickLink('hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-')">YouTube</div>
+        <div class="button tabconfig" onclick="settings()">Tab Config</div>
+        <div class="button updates_btn" onclick="updates()">Updates</div>
+        <div class="settings" id="settings">
+
+            <div class="settingsstuff title_main">Settings</div>
+            <center>
+                <input class="setTitle" placeholder="Title" onkeyup="titleSet(this.value)">
+                <input class="setIco" placeholder="Icon" onkeyup="iconSet(this.value)">
+                <div class="resetButton" onclick="reset()">Reset</div>
+            </center>
+        </div>
+        <div class="updates" id="updates">
+            <div class="updatetitle title_updates">Updates</div>
+            <center>
+                <div class="updatespage" id="updatespage"></div>
+            </center>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="title">Zaluea</div>
+        <div class="subtitle">Search or enter a URL to get started</div>
+        <form>
+            <div class="search-wrap">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input placeholder="Type or search a URL" autocomplete="off">
+            </div>
+        </form>
+        <div class="quicklinks">
+            <div class="quicklink" onclick="quickLink('hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-')">YouTube</div>
+            <a class="quicklink" href="games.html">Games</a>
+        </div>
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+    <script src="updates.js"></script>
+    <script src="site.js"></script>
+</body>
+</html>

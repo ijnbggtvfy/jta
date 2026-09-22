@@ -1,0 +1,17 @@
+{
+  "name": "zaluea",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bare-server-node": "github:tomphttp/bare-server-node",
+    "node-static": "^0.7.11"
+  }
+}
