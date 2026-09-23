@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arcade Row — a small games hub</title>
+<meta name="description" content="A hand-picked hub of browser games — clickers, racers, runners and puzzles.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕹️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="wordmark">ARCADE<span class="dot">·</span>ROW</div>
+      <p class="tagline">A shelf of browser games worth wasting an afternoon on. Click a cabinet, no logins, no installs.</p>
+      <div class="stat-row">
+        <div class="stat"><span class="stat-num" id="stat-games">—</span><span class="stat-label">games</span></div>
+        <div class="stat"><span class="stat-num" id="stat-cats">—</span><span class="stat-label">categories</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">playable here</span></div>
+      </div>
+    </div>
+    <div class="hero-marquee" aria-hidden="true">
+      <span>🕹️</span><span>🏎️</span><span>🐤</span><span>🍪</span><span>🧩</span><span>🍦</span><span>🌀</span><span>🪙</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="Search the shelf…" autocomplete="off">
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <section class="grid" id="grid"></section>
+
+    <p class="empty" id="empty" hidden>Nothing on the shelf matches that. Try a different search or category.</p>
+  </main>
+
+  <footer>
+    <p>Arcade Row — built as a straightforward games list. External titles open on their own sites; Flappy Bird runs locally.</p>
+  </footer>
+
+  <div class="player" id="player" hidden>
+    <div class="player-bar">
+      <span id="player-title">Flappy Bird</span>
+      <div class="player-actions">
+        <button id="player-fullscreen" type="button">Fullscreen</button>
+        <button id="player-close" type="button">Close</button>
+      </div>
+    </div>
+    <iframe id="player-frame" src="" title="Game"></iframe>
+  </div>
+
+  <script src="games-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
